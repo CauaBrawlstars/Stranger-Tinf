@@ -1,0 +1,26 @@
+body{
+ background-color: rgb(163, 74, 74);
+}
+#crp{
+    background-color: rgb(76, 111, 141);
+    padding: 10px;
+}
+#crp .carousel-item {
+  height: 600px; /* Altura fixa do carrossel */
+}
+
+#crp .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* ou 'cover', dependendo do efeito que quiser */
+  display: block;
+  margin: 0 auto;
+}
+.cards-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.arrow{
+    border-radius: 50%;
+    padding: 10px;
+}
