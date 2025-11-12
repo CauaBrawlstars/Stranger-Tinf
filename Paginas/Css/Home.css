@@ -9,10 +9,10 @@ h1,h2,h3 {
   object-fit: contain; /* mantém toda a imagem visível (sem cortes) */
 }
 body{
- background-color: rgb(126, 9, 9);
+   background: linear-gradient(to bottom, #1E0707, #611B1B);
 }
 .banner-img {
-  height: 900px;        /* altura que você quiser (ex: 400px, 300px, etc.) */
+  height: 650px;        /* altura que você quiser (ex: 400px, 300px, etc.) */
   object-fit: cover;    /* corta a imagem mantendo proporção */
   object-position: center; /* centraliza o recorte */
 }
@@ -50,4 +50,13 @@ body{
   width: auto;
   height: auto;
    object-fit: contain;
+}
+.meu-card {
+  background-color: #df0a0aa1; /* cor de fundo personalizada */
+  color: #000000; /* cor do texto */
+  font-family: 'Barlow', sans-serif;
+}
+
+footer{
+    width: 100%;
 }
