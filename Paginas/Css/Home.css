@@ -3,34 +3,34 @@ h1,h2,h3 {
   color: #ff1515;
 }
 .logo-img{
-  max-height: 400px;   /* limita a altura máxima */
-  width: 100%;         /* ocupa toda a largura disponível */
-  height: auto;        /* ajusta a altura automaticamente */
-  object-fit: contain; /* mantém toda a imagem visível (sem cortes) */
+  max-height: 400px;   
+  width: 100%;         
+  height: auto;        
+  object-fit: contain; 
 }
 body{
    background: linear-gradient(to bottom, #1E0707, #611B1B);
 }
 .banner-img {
-  height: 650px;        /* altura que você quiser (ex: 400px, 300px, etc.) */
-  object-fit: cover;    /* corta a imagem mantendo proporção */
-  object-position: center; /* centraliza o recorte */
+  height: 650px;        
+  object-fit: cover;    
+  object-position: center; 
 }
 #crp .carousel-item {
-  height: 600px; /* Altura fixa do carrossel */
+  height: 600px; 
 }
 
 #crp .carousel-item img {
   height: 100%;
   width: 100%;
-  object-fit: contain; /* ou 'cover', dependendo do efeito que quiser */
+  object-fit: contain; 
   display: block;
   margin: 0 auto;
 }
 .card-img-top {
-  height: 250px;           /* altura fixa desejada */
-  object-fit: cover;       /* corta a imagem mantendo o foco central */
-  width: 100%;             /* garante que preencha a largura do card */
+  height: 250px;          
+  object-fit: cover;       
+  width: 100%;             
 }
 .cards-wrapper{
     display: flex;
@@ -52,8 +52,8 @@ body{
    object-fit: contain;
 }
 .meu-card {
-  background-color: #df0a0aa1; /* cor de fundo personalizada */
-  color: #000000; /* cor do texto */
+  background-color: #df0a0aa1; 
+  color: #000000; 
   font-family: 'Barlow', sans-serif;
 }
 
