@@ -15,6 +15,7 @@ body{
   height: 650px;        
   object-fit: cover;    
   object-position: center; 
+  width: 100%;
 }
 #crp .carousel-item {
   height: 600px; 
