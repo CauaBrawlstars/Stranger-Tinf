@@ -1,49 +1,126 @@
-body{
+body {
   background-color: #333333;
 }
-
-.texto-noticia {
-  flex: 1; /* ocupa todo o espaço disponível à esquerda */
+footer{
+  font-family: "Barlow", serif;
 }
-
-.noticia-pequena{
-  width: 400px;
-border-radius: 12px;
-  box-shadow:
-    0 8px 20px rgba(0,0,0,0.35),
-    0 20px 40px rgba(0,0,0,0.45);
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
-  overflow: visible;
-  position: relative;
+h3, p, h5, h2, h1 {
+    font-family: "DM Serif Display", serif;
 }
-.new{
+.new {
   color: #ff1515;
 }
-.noticia-grande{
-  margin-top: 2rem;
+
+.noticia-grande {
   border-radius: 12px;
   box-shadow:
     0 8px 20px rgba(0,0,0,0.35),
     0 20px 40px rgba(0,0,0,0.45);
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
-  overflow: visible;
-  position: relative;
+  transition: 0.28s;
+  overflow: hidden;
 }
 
-.noticia-grande1{
-  margin-top: 2rem;
-border-radius: 12px;
+.noticia-grande img {
+  max-width: 45%;
+}
+
+.noticia-pequena {
+  width: 100%;
+  border-radius: 12px;
   box-shadow:
     0 8px 20px rgba(0,0,0,0.35),
     0 20px 40px rgba(0,0,0,0.45);
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
-  overflow: visible;
-  position: relative;
-  border: 0;
+  transition: 0.28s;
+  overflow: hidden;
 }
-.centralizar-tela {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.noticia-pequena img {
+  max-width: 40%;
+}
+
+/*responsividade (dificil de entender)  */
+@media (max-width: 992px) {
+  .noticia-grande {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .noticia-grande img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .noticia-pequena {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .noticia-pequena img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+/* ---- Layout: garantir que a coluna da notícia não faça overflow ---- */
+.row { /* opcional: garante que rows usem box-sizing correto */
+  box-sizing: border-box;
+}
+
+/* Corpo do card: permite que o texto quebre dentro do espaço disponível */
+.card-body {
+  flex: 1 1 auto;  /* cresce e encolhe */
+  min-width: 0;    /* ESSENCIAL para permitir quebra de texto dentro de flex */
+}
+
+/* Texto dentro do card - garante quebra e evita overflow */
+.card-body h5,
+.card-body h1,
+.card-body p {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Imagem pequena: fixa largura máxima e evita que estique o layout */
+.noticia-pequena img {
+  flex: 0 0 120px;   /* não cresce; ocupa 96px de largura */
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Imagens grandes: limitam percentualmente, sem ultrapassar a coluna */
+.noticia-grande img {
+  max-width: 35%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Em telas muito pequenas, diminui ainda mais as imagens pequenas */
+@media (max-width: 576px) {
+  .noticia-pequena {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .noticia-pequena img {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    margin-top: .5rem;
+  }
+
+  .noticia-grande {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .noticia-grande img {
+    max-width: 100%;
+    margin-top: .75rem;
+  }
+}
+
+/*noticias de baixo */
+.card-text{
+  color: rgb(255, 255, 255);
 }
