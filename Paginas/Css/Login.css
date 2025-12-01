@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+/* IMAGEM DE FUNDO */
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/lab.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* CARD CENTRAL, BEM TRANSLÚCIDO */
+.login-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    width: 40rem;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* TÍTULO */
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* INPUTS LARGOS */
+.input-login {
+    font-size: 1.3rem;
+    height: 3.2rem;
+    border-radius: 6px;
+}
+
+/* ÍCONE DE VOLTAR FIXADO NO CANTO */
+.voltar-fixo {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    text-decoration: none;
+}
+
+.voltar-quadro {
+    width: 65px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
