@@ -9,39 +9,25 @@
 
 </head>
 
-<!--cabeçalho-->
-  <img src="../img/logoFundopreto.svg" class="img-fluid w-100" alt="">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Stranger TINF</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Hawkins News
+<nav>
+    <div class="header-bar">
+        <div class="d-flex align-items-center">
+
+            <a href="Criaturas.html" class="nav-text text-decoration-none">
+                Registro de criaturas
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Desaparecidos.html">Desaparecidos</a></li>
-              <li><a class="dropdown-item" href="Noticias.html">Noticias</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Curiosidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Locais</a>
-          </li>
-        </ul>
-      </div>
+
+            <a href="relatorio.php" class="nav-text red text-decoration-none ms-3">
+                Relatórios
+            </a>
+
+        </div>
+
+        <a href="index.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" class="home-icon" alt="Home">
+        </a>
     </div>
-  </nav>
+</nav>
 
 
 <body class="bg-light">
