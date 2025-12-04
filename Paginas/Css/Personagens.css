@@ -1,3 +1,63 @@
-body{
+body {
   background: linear-gradient(to bottom, #1E0707, #611B1B);
 }
+
+
+.neon-card {
+            background-color: #000; /* Fundo preto */
+            /* Borda AZUL MAIS INTENSA */
+            border: 2px solid #08f; 
+            border-radius: 15px;
+            /* Efeito NEON AZUL/CIANO */
+            box-shadow: 0 0 20px rgba(0, 136, 255, 0.8), 
+                        0 0 8px rgba(0, 136, 255, 0.5) inset;
+            color: #fff; /* Texto branco */
+            padding: 10px;
+            max-width: 400px;
+        }
+
+        .card-image-top {
+            border-radius: 10px; 
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card-title-neon {
+            color: #ff4500; /* Cor vermelha/laranja para o título */
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500; /* Efeito neon no título */
+        }
+        
+        .card-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo do Botão (VERMELHO SÓLIDO e Efeito NEON) */
+        .neon-button {
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            /* Cor de fundo VERMELHO SÓLIDO */
+            background-color: #ff0000; 
+            /* Efeito NEON VERMELHO */
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.9); 
+            transition: all 0.3s ease;
+        }
+        
+        .neon-button:hover {
+            opacity: 0.95;
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+        }
+    
