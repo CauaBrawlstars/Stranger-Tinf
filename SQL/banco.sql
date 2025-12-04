@@ -1,6 +1,6 @@
 -- Criar banco de dados
-CREATE DATABASE IF NOT EXISTS juncao;
-USE juncao;
+CREATE DATABASE IF NOT EXISTS strangerthings;
+USE strangerthings;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -67,3 +67,4 @@ INSERT INTO `relatorios` (`numero_relatorio`, `titulo`, `data_relatorio`, `pesqu
  'Suspender todos os testes até segunda ordem do Departamento de Energia');
 
 COMMIT;
+
