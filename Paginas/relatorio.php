@@ -98,7 +98,7 @@
 
             <div class="d-flex flex-column mb-4 mx-auto" style="width: 200px; height: 300px;">
               <img src="../img/logo_transparente.png" height="120" alt="Logo Site" />
-              <p class="text-center fs-5">O me lhor site<br> sobre a cidade de <br> Hawkins.</p>
+              <p class="text-center fs-5">O melhor site<br> sobre a cidade de <br> Hawkins.</p>
             </div>
 
 
