@@ -10,6 +10,7 @@ body{
   transition: transform 0.28s ease, box-shadow 0.28s ease;
   overflow: visible;
   position: relative;
+    
 }
 
 .card-caua .card:hover {
@@ -26,6 +27,7 @@ body{
   height: 220px;        
   object-fit: cover;    
   width: 100%;
+ 
 }
 
 .card-caua {
